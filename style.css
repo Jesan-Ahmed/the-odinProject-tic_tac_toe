@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: cadetblue;
+}
+.heading{
+    position: absolute;
+    left:630px;
+    top: 100px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -15px;
+}
+.game-container{
+    position: absolute;
+    top: 200px;
+    left: 630px;
+    width: 300px;
+    aspect-ratio: 1/1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 3px;
+
+    background-color: aquamarine;
+    border: 3px solid aquamarine;
+}
+.btn{
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: darkcyan;
+    font-size: 60px;
+    font-weight: 900;
+    color:black;
+
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items:left;
+    justify-content: center;
+
+    position: absolute;
+    top: 200px;
+
+    width: 250px;
+    height: 300px;
+    padding-left: 40px;
+
+    background-color: darkcyan;
+    border-radius: 20px;
+}
+.player *{
+    font-size: 27px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+.player.one{
+    left: 300px;
+}
+.player.two{
+    left: 1000px;
+}
+.span{
+    position: relative;
+    top: 5px;
+
+    color:bisque;
+    font-size: 35px;
+}
+.start,
+.restart{
+    position: absolute;
+    top:550px;
+
+    height: 60px;
+    border-radius: 10px;
+
+    font-size: 30px;
+}
+.start{
+    left: 630px;
+    width: 100px;
+    background-color:darkolivegreen;
+}
+.restart{
+    left: 770px;
+    width: 150px;
+    background-color: darkslategrey;
+}
+
+.form{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    position: absolute;
+    left: 550px;
+    top: 200px;
+
+    width:450px;
+    height: 250px;
+
+    background-color: darkcyan;
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+
+    font-size: 35px;
+}
+legend{
+    position: relative;
+    left: 15px;
+    top: 10px;
+    margin: auto;
+}
+fieldset{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    border: none;
+}
+label{
+    position: relative;
+    left:20px;
+    top: 30px;
+}
+input{
+    position: relative;
+    left: 10px;
+    top:27px;
+
+    height: 40px;
+    width: 250px;
+    background-color: aquamarine;
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+    text-align: center;
+     caret-color: transparent;
+    font-size: 30px;
+}
+.btn-submit{
+    position: relative;
+    left: 15px;
+
+    height: 40px;
+    width: 200px;
+
+    background-color: aquamarine;
+    border-radius: 20px;
+
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+.winner{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 550px;
+    top: 200px;
+
+    width:450px;
+    height: 300px;
+    border: 3px solid aquamarine;
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+.winner img{
+    width:90px;
+    aspect-ratio: 1;
+    margin-bottom:15px; 
+}
+.winner p{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* HOVER EFFECT */
+.start:hover{
+    left: 620px;
+    top:545px;
+
+    width: 120px;
+    height: 70px;
+
+    font-size: 40px;
+}
+
+.restart:hover{
+    left: 760px;
+    top:545px;
+
+    width: 170px;
+    height: 70px;
+
+    font-size: 40px;
+}
+
