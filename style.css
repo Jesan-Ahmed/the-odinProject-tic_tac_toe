@@ -164,7 +164,7 @@ input{
     font-weight: 900;
 }
 .winner{
-    /* display: flex; */
+    /* display: flex;  */
     display: none;
     flex-direction: column;
     align-items: center;
